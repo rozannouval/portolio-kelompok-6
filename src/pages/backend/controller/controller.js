@@ -1,7 +1,7 @@
 //import express validator
 import { validationResult } from "express-validator";
 //require connection
-import connection from "../config/database.mjs";
+import connection from "../config/database.js";
 
 const index =
   ("/",

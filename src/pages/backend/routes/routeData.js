@@ -5,7 +5,7 @@ import {
   updateAnggota,
   tambahAnggota,
   deleteAnggota,
-} from "../controller/controller.mjs";
+} from "../controller/controller.js";
 import { body } from "express-validator";
 
 const router = express.Router();

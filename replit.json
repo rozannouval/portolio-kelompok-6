@@ -1,4 +1,0 @@
-"run": {
-  "npm": "npm start",
-  "node": "node@16"
-}

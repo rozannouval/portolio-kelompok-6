@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import bodyParser from "body-parser";
-import routeData from "./routes/routeData.mjs";
+import routeData from "./routes/routeData.js";
 
 const app = express();
 const port = 3000;
