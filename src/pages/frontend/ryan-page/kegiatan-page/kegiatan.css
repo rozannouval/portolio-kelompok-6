@@ -1,0 +1,29 @@
+.k-container {
+  padding: 7rem 0 2rem 0;
+  text-align: center;
+  background-image: url("../img/biru tua.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.k-container img {
+  width: 45rem;
+  border-radius: 10px;
+  border: 2px solid #3c64b4;
+  box-shadow: 0 0 0 2px #b3c8ea, 0 0 10px 5px #8daae2;
+}
+
+.back {
+  margin: 3rem 0;
+}
+
+.back a {
+  background: #a1bae8;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0 2px #121212, 0 0 10px 5px #87a9ee;
+}

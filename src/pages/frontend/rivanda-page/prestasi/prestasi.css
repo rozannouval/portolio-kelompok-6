@@ -1,0 +1,19 @@
+.prestasi-container {
+  margin-top: 7rem;
+  text-align: center;
+}
+
+.gambar-prestasi {
+  width: 20rem;
+  height: 15rem;
+  border-radius: 10px;
+  border: 1px solid white;
+  object-fit: cover;
+  object-position: center;
+}
+
+.text-prestasi h1 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}

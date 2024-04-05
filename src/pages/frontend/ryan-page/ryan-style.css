@@ -1,0 +1,104 @@
+.ryan-home-background {
+  background-image: url("./img/sp1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 88vh;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 50%,
+    transparent 100%
+  );
+}
+
+.ryan-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding: 3rem 3rem;
+}
+
+.ryan-foto {
+  width: 20rem;
+  border-radius: 100%;
+  border: 3px solid #89cf;
+}
+
+.ryan-text {
+  margin: 4rem 3rem;
+  padding: 2rem 4rem;
+  background: #000000bb;
+  backdrop-filter: blur(10px);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.mh {
+  display: flex;
+  align-items: center;
+  padding: 0 3rem;
+  color: #f3f1f1;
+}
+
+.mh img {
+  width: 2rem;
+  margin: 0 0.5rem;
+}
+
+.logo-ig,
+.logo-wa {
+  width: 2rem;
+  margin-left: 1rem;
+}
+
+.project-aktv-bg {
+  background-image: url("./img/bg aja.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-aktv {
+  /* margin-top: 20rem; */
+  padding: 0 7rem;
+}
+
+.project-aktv h1 {
+  text-align: center;
+
+  color: #ededed;
+}
+
+.ft-kegiatan-container {
+}
+
+.ft-kegiatan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.ft-kegiatan a {
+  text-decoration: none;
+  color: #ededed;
+}
+
+.ft-kegiatan div {
+  text-align: center;
+  width: 30rem;
+}
+
+.ft0 {
+  width: 25rem;
+  height: 15rem;
+  border-radius: 30px;
+  border: 3px solid #ffffffff;
+}
+
+.ryan-footer-content {
+  background: linear-gradient(to bottom, #2a3941, #89cf);
+  padding: 2rem 4rem;
+  text-align: center;
+}

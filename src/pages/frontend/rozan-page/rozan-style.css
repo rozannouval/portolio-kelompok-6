@@ -1,0 +1,270 @@
+.rozan-home-container {
+  /* background-image: url("./img/background.jpg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 6rem;
+}
+
+/* HEXAGON START */
+.hex-container {
+  background: black;
+  min-height: 100vh;
+  position: absolute;
+  z-index: -5;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 1%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}
+
+.row {
+  display: inline-flex;
+  margin-top: -32px;
+  margin-left: -50px;
+}
+
+.row:nth-child(even) {
+  margin-left: 2px;
+}
+
+.hexagon {
+  margin: 2px;
+  width: 100px;
+  height: 110px;
+  background: #111;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transition: 1s;
+  animation: hexa 3s linear infinite;
+}
+
+.hexagon:hover {
+  background-color: #0f0;
+  transition: 0s;
+}
+
+@keyframes hexa {
+  0% {
+    filter: hue-rotate(0deg);
+    background-color: #0f0;
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    background-color: #0f0;
+  }
+}
+
+.hexagon::after {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  background-color: #111;
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.hexagon:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(23, 23, 23, 0.55);
+  z-index: 2;
+}
+/* HEXAGON END */
+
+#rozan-card {
+  margin-top: 25rem;
+}
+
+/* HERO SECTION START */
+.rozan-hero {
+  display: flex;
+  justify-content: space-between;
+  /* min-height: 100vh; */
+  margin-top: -10px;
+  padding: 3rem 3rem 0rem 5rem;
+  background: rgba(0, 0, 0, 0.397);
+}
+
+.rozan-hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.9) 50%,
+    transparent 100%
+  );
+}
+
+.rozan-hero-bg video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.rozan-hero-text {
+  margin: 5rem 0;
+  padding: 1rem;
+}
+
+.rozan-hero-text h1 {
+  font-size: 4em;
+  font-family: "Rubik Glitch", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 3px;
+  color: #75f6ff;
+}
+
+.rozan-hero-text p {
+  font-family: system-ui;
+  letter-spacing: 4px;
+  margin-right: 15rem;
+}
+
+.rozan-hero-img {
+  margin-top: -1rem;
+}
+
+.rozan-hero-img img {
+  width: 22rem;
+  pointer-events: none;
+  border-bottom: 5px solid #c7c7c7;
+  backdrop-filter: blur(5px);
+}
+
+.rozan-hero-btn {
+  margin-top: 2rem;
+}
+
+.rozan-hero-btn a {
+  text-decoration: none;
+  color: white;
+  background: transparent;
+  padding: 0.7rem 2rem;
+  border-radius: 10px;
+  transition: 0.5s;
+  border: 1px solid white;
+}
+
+.rozan-hero-btn a:hover {
+  background: #e6e6e6;
+  color: black;
+  border: 1px solid black;
+}
+/* HERO SECTION END */
+
+.rozan-home-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8rem 3rem;
+  padding: 4rem 5rem;
+  background: #000000bb;
+  backdrop-filter: blur(5px);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.rozan-foto {
+  width: 17.5rem;
+  height: 17.5rem;
+  border-radius: 100%;
+  border: 2px solid white;
+}
+
+.rozan-foto:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 10rem solid white;
+}
+
+.rozan-home-text {
+  padding: 1rem 3rem;
+  /* border: 1px solid white; */
+}
+
+.quotes {
+  border-top: 2px solid white;
+  margin-top: 1rem;
+  padding-top: 0.5rem;
+}
+
+/* Project */
+.rozan-project {
+  margin: 4rem 3rem;
+  padding: 4rem 5rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.192);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.rozan-project h1 {
+  font-size: 3em;
+  font-weight: 20rem;
+  font-style: normal;
+}
+
+.rozan-project-content {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10rem 10rem;
+  justify-content: center;
+  padding: 10px;
+  margin: 2rem 0;
+  padding: 2rem 3rem;
+}
+
+.rozan-project-content a {
+  cursor: pointer;
+  padding: 2rem 3rem;
+  filter: grayscale(1);
+  transition: all 0.3s;
+}
+
+.rozan-project-content img {
+  width: 17rem;
+  height: 10rem;
+  object-fit: cover;
+  object-position: left;
+  margin: 0 1rem;
+  border-radius: 10px;
+  border: 2px solid black;
+  transition: 0.3s all;
+  border-radius: 20px;
+  pointer-events: none;
+  box-shadow: 0 0 0 2px white, 0 0 2px 5px red;
+  transform: scale(1.5);
+}
+
+.rozan-project-content a:hover {
+  filter: grayscale(0);
+}
+
+.rozan-project-text {
+  text-align: left;
+}
+
+.rozan-footer {
+  background: linear-gradient(to bottom, black, red);
+  padding: 1rem 0;
+  animation: rzn-footer 3s linear infinite;
+}
+
+@keyframes rzn-footer {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.rozan-footer-content {
+  text-align: center;
+}

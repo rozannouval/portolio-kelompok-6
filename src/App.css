@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+    @keyframes gear-rotate {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .gear-animation {
+      animation: gear-rotate 2s linear infinite;
+    }
+
+    /* Animasi tambahan untuk variasi */
+
+    @keyframes gear-rotate-slow {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .gear-animation-slow {
+      animation: gear-rotate-slow 4s linear infinite;
+    }
+
+    @keyframes gear-rotate-reverse {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+
+    .gear-animation-reverse {
+      animation: gear-rotate-reverse 2s linear infinite;
+    }
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: white;
+  overflow-x: hidden;
+}
+
+body span {
+  font-weight: bold;
+}
+
+@keyframes slideRight {
+  0%,
+  100% {
+    background-position: 0% 200%;
+  }
+  30% {
+    background-position: 100% 200%;
+  }
+  50% {
+    background-position: 0% 200%;
+  }
+  50% {
+    background-position: 100% 200%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(to right, red, purple, blue);
+  background-size: 200% 100%;
+  animation: slideRight 1s linear infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px) scale(1.2);
+  }
+  75% {
+    transform: translateX(-5px) scale(1.4);
+  }
+}
+
+.animate-move {
+  animation: move 2s infinite alternate;
+}
